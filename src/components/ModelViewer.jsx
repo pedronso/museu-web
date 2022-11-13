@@ -1,23 +1,27 @@
 import { useState } from "react";
 import "./ModelViewer.css"
-import {jsonMock} from "./data"
+import {jsonMock} from "./data2"
 
 function ModelViewer(props){
-
-    let path = jsonMock.linksGLB[props.index];
-    let pathImg = jsonMock.posters[props.index];
     
+    
+    let category = jsonMock[props.model.categoria]
+    let model = category[props.model.modelo] 
+
+    // console.log(model)
+
     return(
         <div className="container">
-            <model-viewer src={path} ar ar-modes="webxr scene-viewer quick-look" animation-name="StandUpAim" camera-controls shadow-intensity="2" poster = {pathImg} autoplay/>
+            <model-viewer id = "viewer" src={model.linkGLB} ar ar-modes="webxr scene-viewer quick-look" animation-name="StandUpAim" camera-controls touch-action="pan-y" shadow-intensity="2" poster = {model.poster} autoplay>
             <div className="content">
                 <div className="name">
-                    {jsonMock.names[props.index]}
+                    {model.name}
                 </div>
                 <div className="description">
-                    {jsonMock.descriptions[props.index]}
+                    {model.description}
                 </div>
             </div>
+            </model-viewer>
         </div>
     );
 }

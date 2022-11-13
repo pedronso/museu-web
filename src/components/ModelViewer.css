@@ -1,7 +1,7 @@
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    border: 1px solid black;
   }
 
 .content{
@@ -10,6 +10,8 @@
     right: 16px;
     color: black;
     max-width: 30%;
+    
+    -webkit-animation: fadein 2s;
 }
 .name{
     
@@ -21,9 +23,10 @@
 .description{
     font-size: medium;
     text-align: start;
-    -webkit-animation: fadein 2s;
+    
+    -webkit-animation: fadein 3s;
 }
 model-viewer{
-    width: 870px;
-    height: 600px;
+    width: 910px;
+    height: 650px;
 }
