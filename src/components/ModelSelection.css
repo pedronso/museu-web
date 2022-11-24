@@ -1,16 +1,16 @@
-.container{
+.model-selection-container{
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-.container::-webkit-scrollbar {
+.model-selection-container::-webkit-scrollbar {
   width: 5px;
   height: 8px;
   background-color: #dee3ed; /* or add it to the track */
 }
 
 /* Add a thumb */
-.container::-webkit-scrollbar-thumb {
+.model-selection-container::-webkit-scrollbar-thumb {
   background: #8f96a3;
 }
 

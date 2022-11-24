@@ -9,16 +9,7 @@ export const jsonMock = {
       poster:
         "./models/gun.png",
     },
-    {
-      linkGLB:
-        "./models/ak.glb",
-      name:
-        "AK-47",
-      description:
-      "Ak-47 que achei no sketchfab.",
-      poster:
-        "./models/link.png",
-    }],
+    ],
     Personagens:[{
       linkGLB:
         "./models/lamp.glb",
@@ -32,6 +23,15 @@ export const jsonMock = {
     {
       linkGLB:
         "./models/maria.glb",
+      name:
+        "Maria Bonita",
+      description:
+      "Maria Gomes de Oliveira, conhecida como Maria de Déa e, após sua morte, Maria Bonita, foi uma cangaceira brasileira, companheira de Virgulino Ferreira da Silva, o Lampião e a primeira mulher a participar de um grupo de cangaceiros.",
+      poster:
+        "./models/maria.png",
+    },{
+      linkGLB:
+        "./models/maria2.glb",
       name:
         "Maria Bonita",
       description:
@@ -59,16 +59,6 @@ export const jsonMock = {
       poster:
         "./models/link.png",
     },
-    {
-      linkGLB:
-        "./models/astronaut.glb",
-      name:
-        "Astronauta",
-      description:
-      "Modelo de um astronauta.",
-      poster:
-        "./models/link.png",
-    }
   ],
     categoria4:[{
         linkGLB:
@@ -80,14 +70,33 @@ export const jsonMock = {
         poster:
           "./models/t_rex.png",
       },
-      {
-        linkGLB:
-          "./models/cara.glb",
-        name:
-          "Regular dude",
-        description:
-        "He's a nice guy, just that.",
-        poster:
-          "./models/link.png",
-      }
-    ],}
+    ],categoria5:[{
+      linkGLB:
+        "./models/t_rex.glb",
+      name:
+        "T-rex",
+      description:
+      "Tyrannosaurus é um gênero de dinossauros terópodes celurossauros que viveram durante o final do período cretáceo, há aproximadamente 66 milhões de anos, em toda a região que hoje é a América do Norte.",
+      poster:
+        "./models/t_rex.png",
+    },
+  {
+    linkGLB:
+      "./models/astronaut.glb",
+    name:
+      "Astronauta",
+    description:
+    "Modelo de um astronauta.",
+    poster:
+      "./models/link.png",
+  },{
+    linkGLB:
+      "./models/ak.glb",
+    name:
+      "AK-47",
+    description:
+    "Ak-47 que achei no sketchfab.",
+    poster:
+      "./models/link.png",
+  },
+  ],}

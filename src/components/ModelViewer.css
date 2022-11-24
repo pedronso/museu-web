@@ -1,7 +1,7 @@
-.container {
+.model-viewer-container {
     position: relative;
     text-align: center;
-    border: 1px solid black;
+    border: 0px solid black;
   }
 
 .content{
@@ -28,5 +28,13 @@
 }
 model-viewer{
     width: 910px;
-    height: 650px;
+    height: 600px;
 }
+
+@media (max-width:700px){
+    .content{
+        top: 0px;
+        bottom:0px;
+    }
+  }
+  

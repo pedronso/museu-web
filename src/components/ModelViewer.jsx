@@ -11,8 +11,8 @@ function ModelViewer(props){
     // console.log(model)
 
     return(
-        <div className="container">
-            <model-viewer id = "viewer" src={model.linkGLB} ar ar-modes="webxr scene-viewer quick-look" animation-name="StandUpAim" camera-controls touch-action="pan-y" shadow-intensity="2" poster = {model.poster} autoplay>
+        <div className="model-viewer-container">
+            <model-viewer id = "viewer" src={model.linkGLB} ar ar-modes="webxr scene-viewer quick-look" animation-name="StandUP" camera-controls touch-action="pan-y" shadow-intensity="2" poster = {model.poster} autoplay>
             <div className="content">
                 <div className="name">
                     {model.name}

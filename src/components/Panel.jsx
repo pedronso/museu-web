@@ -5,7 +5,7 @@ function Panel({handleModelSelection}){
 
     return(
       <div className='panel'>
-        <h1>Selecione o artefato</h1>
+        <h1 className='title'>Selecione o artefato</h1>
         <ModelSelection handleModelSelection={handleModelSelection}/>
       </div>
     );

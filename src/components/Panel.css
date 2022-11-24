@@ -6,6 +6,12 @@
     height: 600px;
   }
 
-  h1{
-    margin-bottom: 5%;
+  .title{
+    margin-bottom: 10%;
+  }
+
+  @media (max-width:700px){
+    .panel{
+      justify-content: center;
+    }
   }

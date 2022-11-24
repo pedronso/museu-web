@@ -5,7 +5,7 @@ import Category from "./Category";
 function ModelSelection({handleModelSelection}){
 
     return(
-        <div className='container'>
+        <div className='model-selection-container'>
         {Object.keys(jsonMock).map((category, index) =>{
             return(
                 <>              
