@@ -4,15 +4,18 @@ var time = $('#time');
 var scroll = $('#scroll');
 var windowheight = $(window).height();
 // select video element         
-
+var dotControll = 0;
 // lower numbers = faster playback
 var playbackConst = 300;
-
 // dynamically set the page height according to video length
 var setHeight = document.getElementById("museu-container");
 //TENTAR ADICIONAR PORCENTEAGEM DA DURAÇÃO DO VIDEO AO INVES DE VALOR ABSOLUTO
 vid.addEventListener('loadedmetadata', function() {
-setHeight.style.height = Math.floor(vid.duration+(vid.duration*0.03)) * playbackConst + "px";
+    setHeight.style.height = Math.floor(vid.duration+(vid.duration*0.03)) * playbackConst + "px";
+    dotControll = Math.floor(vid.duration+(vid.duration*0.03)) * playbackConst;
+    //console.log(setHeight.style.height)
+    //console.log(vid.duration)
+
 });
 
 var scrollpos = setHeight.style.height/playbackConst;
@@ -33,7 +36,7 @@ window.onscroll = function(){
   
     //move the red dot to a position across the side of the screen
     //that indicates how far we've scrolled.
-    scroll.css('top', 10+(window.pageYOffset/31500*windowheight));
+    scroll.css('top', 10+(window.pageYOffset/dotControll*windowheight));
 };
 
 
@@ -51,11 +54,11 @@ setInterval(function(){
   
       //move the blue dot to a position across the side of the screen
       //that indicates where the current video scroll pos is.  
-      time.css('top', 10+(scrollpos/31500*playbackConst*windowheight));
+      time.css('top', 10+(scrollpos/dotControll*playbackConst*windowheight));
   
       //update video playback
       vid.currentTime = scrollpos;
       vid.pause();
-      console.log(vid.currentTime)
+      //console.log(vid.currentTime)
     
 }, 400);

@@ -4,6 +4,22 @@
     border: 0px solid black;
   }
 
+.toggle-poster{
+    border: 2px solid darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.toggle-poster:active{
+    background-color: darkgray;
+}
+
 .content{
     position: absolute;
     top: 8px;

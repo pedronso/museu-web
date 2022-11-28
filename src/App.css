@@ -18,7 +18,7 @@
   padding-left: 1%;
 }
 
-@media (max-width:700px){
+@media (max-width:1000px){
   .App-body{
     flex-direction: column;
     justify-content: center;

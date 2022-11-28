@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./ModelViewer.css"
 import {jsonMock} from "./data2"
+import CompareRoundedIcon from '@mui/icons-material/CompareRounded';
 
 function ModelViewer(props){
     
@@ -21,6 +22,18 @@ function ModelViewer(props){
                     {model.description}
                 </div>
             </div>
+            <div className="toggle-poster" onClick={()=>{
+                document.getElementById("viewer").modelIsVisible ? document.getElementById("viewer").showPoster() : document.getElementById("viewer").dismissPoster() 
+                
+                // if(document.getElementById("viewer").modelIsVisible==true){
+                //     console.log("is visible")
+                //     document.getElementById("viewer").showPoster()
+                // }else{
+                //     console.log("no visible")
+                //     document.getElementById("viewer").dismissPoster()
+
+                // }
+            }}><CompareRoundedIcon color={"action"}/></div>
             </model-viewer>
         </div>
     );

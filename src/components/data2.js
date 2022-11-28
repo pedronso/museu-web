@@ -7,7 +7,7 @@ export const jsonMock = {
       description:
           "A pistola Luger P08 é uma antiga pistola semiautomática fabricada na Alemanha, entre os anos de 1900 e 1941. Foi considerada como o maior souvenir da Segunda Guerra Mundial. Esta pistola foi adotada pelo exército alemão em 1908, razão do nome P08.",
       poster:
-        "./models/gun.png",
+        "./models/gun.jpg",
     },
     ],
     Personagens:[{

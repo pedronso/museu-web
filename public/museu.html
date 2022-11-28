@@ -9,10 +9,127 @@
 
 <div id="time"></div>
 <div id="scroll"></div>
-<div id="museu-container">  
-  <video id="player" class="" tabindex="0" autobuffer="autobuffer" preload="preload" controls>
-    <!-- <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="src/videoplayback.mp4"></source> -->
+
+<!-- The Modal -->
+<div class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="zoomC" style="background: url('./img/painel1.png')"></div>
+    <!-- <img src="./img/painel1.png" alt=""> -->
+    <!-- <p>1- Some text in the Modal..</p> -->
+  </div>
+
+</div>
+
+<!-- The Modal -->
+<div class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="zoomC" style="background: url('./img/painel2.png')"></div>
+    <!-- <img src="./img/painel2.png" alt=""> -->
+    <!-- <p>2- Some text in the Modal..</p> -->
+  </div>
+
+</div>
+
+<!-- The Modal -->
+<div class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="zoomC" style="background: url('./img/painel3.png')"></div>
+    <!-- <img src="./img/painel3.png" alt=""> -->
+    <!-- <p>3- Some text in the Modal..</p> -->
+  </div>
+
+</div>
+
+<!-- The Modal -->
+<div class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="zoomC" style="background: url('./img/painel4.png')"></div>
+    <!-- <img src="./img/painel4.png" alt=""> -->
+    <!-- <p>4- Some text in the Modal..</p> -->
+  </div>
+
+</div>
+
+<!-- The Modal -->
+<div class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="zoomC" style="background: url('./img/painel5.png')"></div>
+    <!-- <img src="./img/painel5.png" alt=""> -->
+    <!-- <p>5- Some text in the Modal..</p> -->
+  </div>
+
+</div>
+
+<div id="museu-container">
+  <div id="video-sections">
+
+    <section class="video-section-container">
+      <div class="video-section-content">
+        <h1 class="myBtn-intro" >Bem Vindo ao Museu do Cangaço!  
+          <p>Para conhecer, role para baixo</p>
+        </h1>
+    </div>
+  </section>
+
+    <section class="video-section-container">
+        <div class="video-section-content">
+          <h1 class="myBtn" >Painel 1  
+            <p>Lampião, uma viagem pelo cangaço</p>
+          </h1>
+      </div>
+    </section>
+    
+    <section class="video-section-container">
+      <div class="video-section-content">
+          <h1 class="myBtn">Painel 2
+            <p>Virgolino Ferreira</p>
+          </h1>
+      </div>
+    </section>
+    
+    <section class="video-section-container">
+      <div class="video-section-content">
+          <h1 class="myBtn">Painel 3
+            <p>De Virgolino a Lampião - 1920</p>
+          </h1>
+      </div>
+    </section>
+    
+    <section class="video-section-container">
+      <div class="video-section-content">
+          <h1 class="myBtn">Painel 4
+            <p>Capitão Virgolino Lampião</p>
+          </h1>
+      </div>
+    </section>
+    
+    <section class="video-section-container">
+      <div class="video-section-content">
+        <h1 class="myBtn">Painel 5
+          <p>Curiosidades</p>
+        </h1>
+      </div>
+    </section>
+    </div>
+
+  <video id="player" class="" tabindex="0" autobuffer="autobuffer" preload="preload">
     <source type="video/mp4;  codecs=&quot;avc1.42E01E, mp4a.40.2&quot;" src="museu.mp4"></source>
+    <!-- <source type="video/webm; codecs=&quot;vp8, vorbis&quot;" src="src/videoplayback.mp4"></source> -->
     <!-- <source type="video/ogg; codecs=&quot;theora, vorbis&quot;" src="vid2.ogv"></source> -->
     
     <p>Sorry, your browser does not support the &lt;video&gt; element.</p>
@@ -22,6 +139,9 @@
 <p>Ola</p>
 
 <!-- scripts -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="scroll.js"></script>
+    <script src="modal.js"></script>
+    <script src="zoom.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="scroll.js"></script>
 </body>
 </html>
