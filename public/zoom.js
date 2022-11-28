@@ -1,4 +1,3 @@
-// CREDITS : https://www.cssscript.com/image-zoom-pan-hover-detail-view/
 var addZoom = (target) => {
     // (A) GET CONTAINER + IMAGE SOURCE
     let container = document.getElementsByClassName("zoomC")[target],

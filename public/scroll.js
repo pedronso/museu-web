@@ -9,7 +9,6 @@ var dotControll = 0;
 var playbackConst = 300;
 // dynamically set the page height according to video length
 var setHeight = document.getElementById("museu-container");
-//TENTAR ADICIONAR PORCENTEAGEM DA DURAÇÃO DO VIDEO AO INVES DE VALOR ABSOLUTO
 vid.addEventListener('loadedmetadata', function() {
     setHeight.style.height = Math.floor(vid.duration+(vid.duration*0.03)) * playbackConst + "px";
     dotControll = Math.floor(vid.duration+(vid.duration*0.03)) * playbackConst;
