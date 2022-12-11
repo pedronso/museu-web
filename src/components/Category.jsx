@@ -1,22 +1,21 @@
 import { useState} from 'react';
-import {jsonMock} from "./data2"
 import "./ModelSelection.css"
 
 function Category(props){
 
     const [show,setShow] = useState(false)
 
-    function handelSetShow(){
+    function handleSetShow(){
         setShow(!show);
     }
 
     return(
      <>
-        <button className="btn first" onClick={handelSetShow} style={{backgroundColor: show ? "#e74c3c":"white", color: show ? "white":"black"}}>{props.name}</button>
-            {jsonMock[props.name].map((artifact,index) =>{
+        <button className="btn first" onClick={handleSetShow} style={{backgroundColor: show ? "#e74c3c":"white", color: show ? "white":"black"}}>{props.category.name}</button>
+            {props.category.modelos.map((artifact,index) =>{
                 return(
                     <>
-                        {show && <button className="btn first sub" onClick={()=>{props.handleModelSelection({categoria:props.name,modelo:index})}}>{artifact.name}</button>}
+                        {show && <button className="btn first sub" onClick={()=>{props.handleModelSelection({categoria:props.cat_index,modelo:index})}}>{artifact.name}</button>}
                     </>
                 )
             }

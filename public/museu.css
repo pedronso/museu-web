@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 }
 #player {
   position: fixed;
-  margin: 1%;
+  margin: 0%;
   /*position: sticky; 
   top: 0%;
   left: 0%; */
@@ -47,34 +47,19 @@ body::-webkit-scrollbar-thumb {
 p font-family helvetica {
   font-size: 24px;
 }
-#time {
-  position: fixed;
-  display: block;
-  top: 10px;
-  right: 10px;
-  z-index: 2;
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  background-color: rgba(0,0,255,0.5);
-}
-#scroll {
-  position: fixed;
-  display: block;
-  top: 10px;
-  right: 10px;
-  z-index: 2;
-  width: 10px;
-  height: 10px;
-  border-radius: 20px;
-  background-color: rgba(255,0,0,0.5);
-}
 
 #video-sections{
   position: relative;
   right: 5%;
 }
 .video-section-container {
+  top:240px;
+  z-index: 2;
+  position: relative;
+}
+
+.video-section-container-home {
+  top:240px;
   z-index: 2;
   position: relative;
 }
@@ -86,7 +71,7 @@ p font-family helvetica {
   top: 33.3%;
 }
 
-h1 {
+.video-section-content h1 {
   font-size: 3em;
   background: #fff;
   display: inline-block;
@@ -95,11 +80,11 @@ h1 {
   margin: 0;
   cursor: pointer;
 }
-h1 p { 
+.video-section-content h1 p { 
   font-size: 1.5rem;
 }
 
-.video-section-container:nth-of-type(1) {
+/* .video-section-container:nth-of-type(1) {
   top: 0px;
   height: 600px;
 }
@@ -123,6 +108,10 @@ height: 600px;
 top: 14200px;
 height: 600px;
 }
+ .video-section-container:nth-of-type(7) {
+  top: 17000px;
+  height: 600px;
+} */ 
 
 /* The Modal (background) */
 .modal {
@@ -141,7 +130,7 @@ height: 600px;
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto; /* 15% from the top and centered */
+  margin: 2% auto; /* 15% from the top and centered */
   padding: 10px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -162,18 +151,12 @@ height: 600px;
   cursor: pointer;
 }
 
-.modal img{
-  height: 100vh;
-  width : 100vw;
-}
-
 .zoomC {
   /* (A) DIMENSIONS */
   width: 70vw;
-  height: 80vh;
+  height: 85vh;
  
   /* (B) BACKGROUND IMAGE */
-  background: url("./img/painel1.png");
   background-position: center;
   background-size: cover;
 }

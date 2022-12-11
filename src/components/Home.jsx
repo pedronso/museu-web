@@ -14,7 +14,6 @@ function Home(){
             <div className="pages">
                 <a className="home-btn first" href="museu.html">Visita interativa</a>
                 <Link to="/acervo" className="home-btn first">Acervo virtual</Link>
-                {/* <button className="btn first">Acervo virtual</button> */}
             </div>
         </div>
         </>

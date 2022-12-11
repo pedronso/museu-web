@@ -20,7 +20,7 @@
     background-color: darkgray;
 }
 
-.content{
+#content{
     position: absolute;
     top: 8px;
     right: 16px;

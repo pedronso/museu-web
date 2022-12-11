@@ -1,15 +1,14 @@
 import "./ModelSelection.css"
-import {jsonMock} from "./data2"
 import Category from "./Category";
 
-function ModelSelection({handleModelSelection}){
+function ModelSelection({handleModelSelection, dados}){
 
     return(
         <div className='model-selection-container'>
-        {Object.keys(jsonMock).map((category, index) =>{
+        {dados?.map((category, index) =>{
             return(
                 <>              
-                  <Category name={category} index={index} handleModelSelection={handleModelSelection} ></Category>
+                  <Category category={category} cat_index={index} handleModelSelection={handleModelSelection} dados={dados}></Category>
                 </>
             )
         }

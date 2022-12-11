@@ -2,7 +2,7 @@
 var modal = document.getElementsByClassName("modal");
 //console.log(modal)
 // Get the button that opens the modal
-var btn = document.getElementsByClassName("myBtn");
+var btn = document.getElementsByClassName("video-section-container");
 //console.log(btn)
 
 // Get the <span> element that closes the modal
@@ -12,6 +12,7 @@ var span = document.getElementsByClassName("close");
 // When the user clicks on the button, open the modal
 btn[0].onclick = function() {
   modal[0].style.display = "block";
+  console.log("btn 1");
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -21,6 +22,8 @@ span[0].onclick = function() {
 
 btn[1].onclick = function() {
   modal[1].style.display = "block";
+  console.log("btn 2");
+
 }
 
 // When the user clicks on <span> (x), close the modal
