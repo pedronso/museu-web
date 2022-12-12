@@ -1,0 +1,26 @@
+* { 
+  border: 0px solid black;
+}
+.App {
+  text-align: start;
+}
+
+.App-body{
+  background-color: white;
+  min-height: 100vh;
+  min-width: 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  padding-left: 1%;
+}
+
+@media (max-width:1000px){
+  .App-body{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
