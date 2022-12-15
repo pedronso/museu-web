@@ -1,5 +1,5 @@
 .model-viewer-container {
-    position: relative;
+    /* position: relative; */
     text-align: center;
     border: 0px solid black;
   }
@@ -10,9 +10,10 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     width: 33px;
     height: 33px;
+    left: 38vw;
     border-radius: 100%;
     cursor: pointer;
 }
@@ -22,16 +23,14 @@
 
 #content{
     position: absolute;
-    top: 8px;
+    top: 5%;
     right: 16px;
     color: black;
-    max-width: 30%;
+    width: 30vw;
     
     -webkit-animation: fadein 2s;
 }
-.name{
-    
-}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -43,14 +42,25 @@
     -webkit-animation: fadein 3s;
 }
 model-viewer{
-    width: 910px;
-    height: 600px;
+    width: 80vw;
+    height: 100vh;
 }
 
-@media (max-width:700px){
-    .content{
+@media (max-width:1000px){
+    #content{
         top: 0px;
-        bottom:0px;
+        width: 70%;
+    }
+    .toggle-poster{
+        position: absolute;
+        /* top:0%; */
+        left: 1%;
+        /* right: 0%; */
+        bottom: -35%;
+    }
+    model-viewer{
+        width: 100vw;
+        height: 80vh;
     }
   }
   

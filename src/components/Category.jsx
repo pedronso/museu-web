@@ -1,7 +1,7 @@
 import { useState} from 'react';
 import "./ModelSelection.css"
 
-function Category(props){
+function Category({category, cat_index, handleModelSelection, }){
 
     const [show,setShow] = useState(false)
 
@@ -11,11 +11,11 @@ function Category(props){
 
     return(
      <>
-        <button className="btn first" onClick={handleSetShow} style={{backgroundColor: show ? "#e74c3c":"white", color: show ? "white":"black"}}>{props.category.name}</button>
-            {props.category.modelos.map((artifact,index) =>{
+        <button className="btn first" onClick={handleSetShow} style={{backgroundColor: show ? "#e74c3c":"transparent", color: show ? "white":"black"}}>{category.name}</button>
+            {category.modelos.map((artifact,index) =>{
                 return(
                     <>
-                        {show && <button className="btn first sub" onClick={()=>{props.handleModelSelection({categoria:props.cat_index,modelo:index})}}>{artifact.name}</button>}
+                        {show && <button className="btn first sub" onClick={()=>{handleModelSelection({categoria:cat_index,modelo:index})}}>{artifact.name}</button>}
                     </>
                 )
             }

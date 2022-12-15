@@ -60,4 +60,4 @@ setInterval(function(){
       vid.pause();
       //console.log(vid.currentTime)
     
-}, 100);
+}, 400);
