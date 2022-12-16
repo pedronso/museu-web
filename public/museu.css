@@ -1,5 +1,5 @@
 *{
-  border: 0px solid black;
+  border: 0px solid white;
 }
 
 body{
@@ -34,6 +34,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
+  right: 5%;
 }
 #player {
   position: fixed;
@@ -48,10 +50,6 @@ p font-family helvetica {
   font-size: 24px;
 }
 
-#video-sections{
-  position: relative;
-  right: 5%;
-}
 .video-section-container {
   top:240px;
   z-index: 2;
@@ -83,35 +81,6 @@ p font-family helvetica {
 .video-section-content h1 p { 
   font-size: 1.5rem;
 }
-
-/* .video-section-container:nth-of-type(1) {
-  top: 0px;
-  height: 600px;
-}
-.video-section-container:nth-of-type(2) {
-  top: 8700px;
-  height: 600px;
-}
-.video-section-container:nth-of-type(3) {
-  top: 10000px;
-  height: 600px;
-}
-.video-section-container:nth-of-type(4) {
-top: 11200px;
-height: 600px;
-}
-.video-section-container:nth-of-type(5) {
-top: 12700px;  
-height: 600px;
-}
-.video-section-container:nth-of-type(6) {
-top: 14200px;
-height: 600px;
-}
- .video-section-container:nth-of-type(7) {
-  top: 17000px;
-  height: 600px;
-} */ 
 
 /* The Modal (background) */
 .modal {
@@ -159,4 +128,26 @@ height: 600px;
   /* (B) BACKGROUND IMAGE */
   background-position: center;
   background-size: cover;
+}
+
+#turn{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: larger;
+}
+
+/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+@media only screen and (orientation:portrait) {
+  #turn { display:flex; }
+  #museu-container { display:none; }
+}
+ 
+/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+@media only screen and (orientation:landscape) {
+  #turn { display:none; }
+  #museu-container { display:flex; }
 }

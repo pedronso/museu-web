@@ -8,7 +8,7 @@ function ModelViewer(props){
     return(
         <>
             <div className="model-viewer-container">
-                <model-viewer id = "viewer" src={model?.linkGLB} ar ar-modes="webxr scene-viewer quick-look" animation-name="StandUP" camera-controls touch-action="pan-y" shadow-intensity="2" autoplay>
+                <model-viewer id = "viewer" src={model?.linkGLB} ar ar-modes="webxr scene-viewer quick-look" animation-name="StandUP" camera-controls touch-action="pan-y" shadow-intensity="2" shadow-softness="0" autoplay>
                 <div id="content">
                     <div className="name">
                         {model?.name}
