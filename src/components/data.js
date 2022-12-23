@@ -13,7 +13,7 @@ export const jsonMock = {
         "name": "Carabina Winchester",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "poster": "./models/modelo15.png",
-        "linkGLB": ".models/modelo15.glb"
+        "linkGLB": "./models/modelo15.glb"
     }
     ],
     Personagens:[{
