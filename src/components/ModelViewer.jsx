@@ -1,10 +1,12 @@
 import "./ModelViewer.css";
+import {jsonMock} from "./data"
 import CompareRoundedIcon from '@mui/icons-material/CompareRounded';
 
 function ModelViewer(props){
 
-    let model = props?.dados[props.model.categoria]?.modelos[props.model.modelo]
-    console.log(model?.linkGLB)
+    // let model = props?.dados[props.model.categoria]?.modelos[props.model.modelo]
+    let category = jsonMock[props.model.categoria]
+    let model = category[props.model.modelo] 
     return(
         <>
             <div className="model-viewer-container">

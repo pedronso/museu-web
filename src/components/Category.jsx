@@ -1,4 +1,5 @@
 import { useState} from 'react';
+import {jsonMock} from "./data"
 import "./ModelSelection.css"
 
 function Category({category, cat_index, handleModelSelection, }){
@@ -11,11 +12,11 @@ function Category({category, cat_index, handleModelSelection, }){
 
     return(
      <>
-        <button className="btn first" onClick={handleSetShow} style={{backgroundColor: show ? "#e74c3c":"transparent", color: show ? "white":"black"}}>{category.name}</button>
-            {category.modelos.map((artifact,index) =>{
+        <button className="btn first" onClick={handleSetShow} style={{backgroundColor: show ? "#e74c3c":"transparent", color: show ? "white":"black"}}>{category}</button>
+            {jsonMock[category].map((artifact,index) =>{
                 return(
                     <>
-                        {show && <button className="btn first sub" onClick={()=>{handleModelSelection({categoria:cat_index,modelo:index})}}>{artifact.name}</button>}
+                        {show && <button className="btn first sub" onClick={()=>{handleModelSelection({categoria:category,modelo:index})}}>{artifact.name}</button>}
                     </>
                 )
             }
