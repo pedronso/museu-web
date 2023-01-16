@@ -17,19 +17,16 @@ function ModelViewer(props){
                         {model?.description}
                     </div>
                 </div>
-                {/* poster = {model?.poster} */}
                 </model-viewer>
             </div>
             <div className="toggle-poster" onClick={()=>{
                     if(document.getElementById("viewer").modelIsVisible===true){
-                        console.log("is visible")
                         document.getElementById("viewer").poster = model?.poster
                         document.getElementById("viewer").showPoster()
                         document.getElementById("viewer").style.width = "60vw"
                         document.getElementById("content").style.display = "none"
                         
                     }else{
-                        console.log("no visible")
                         document.getElementById("viewer").dismissPoster()
                         document.getElementById("viewer").style.width = "80vw"
                         document.getElementById("content").style.display = "block"
