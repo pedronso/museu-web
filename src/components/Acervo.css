@@ -9,6 +9,7 @@
   /* background-color: rgb(241, 236, 236); */
   background-image: linear-gradient(to left top,  #3a3a3a, #777777, #b9b9b9, #ffffff);
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,4 +24,45 @@
     flex-direction: column;
     justify-content: center;
   }
+}
+
+#turn{
+  /* height: 80vh; */
+  /* height: 10%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: smaller; */
+
+  text-align: center;
+  font-size: smaller;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 16px;
+}
+#turn h1{
+  font-size: 16px;
+}
+#turn img{
+  width: 60%;
+}
+
+/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+@media only screen and (orientation:portrait) {
+  #turn { display:flex; }
+  #screen { display:none; }
+}
+ 
+/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+@media only screen and (orientation:landscape) {
+  #turn { display:none; }
+  #screen { display:flex; }
 }

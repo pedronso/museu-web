@@ -46,11 +46,17 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App-body">
-        <Panel handleModelSelection={handleModelSelection} dados={dados} loading={loading} error={error}/>
-      {!error && (
-        <ModelViewer model={model} dados={dados}/>
-        )}
+      <div id="screen">
+        <div className="App-body">
+          <Panel handleModelSelection={handleModelSelection} dados={dados} loading={loading} error={error}/>
+          {!error && (
+            <ModelViewer model={model} dados={dados}/>
+          )}
+        </div>
+      </div>
+      <div id="turn">
+        <h1>Por favor, gire seu aparelho</h1>
+        <img src="./rotate_black.gif" alt=""/>
       </div>
     </div>
   );
