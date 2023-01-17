@@ -2,16 +2,29 @@
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    height: 600px;
+    width: 33vw;
+    height: 80vh;
+    z-index: 2;
+    position: fixed;
+    left: 1%;
+    /* margin-left: 5%; */
   }
 
   .title{
     margin-bottom: 10%;
   }
 
-  @media (max-width:700px){
+  @media (max-width:1000px){
     .panel{
+      position: static;
+      width: 90vw;
+      height: 60vh;
       justify-content: center;
+    }
+    .title{
+      margin-bottom: 0;
+    }
+    .btn{
+      min-width: 60vw;
     }
   }

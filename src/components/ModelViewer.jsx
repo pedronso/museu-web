@@ -4,30 +4,35 @@ import CompareRoundedIcon from '@mui/icons-material/CompareRounded';
 function ModelViewer(props){
 
     let model = props?.dados[props.model.categoria]?.modelos[props.model.modelo]
+    console.log(model?.linkGLB)
     return(
-        <div className="model-viewer-container">
-            <model-viewer id = "viewer" src={model?.linkGLB} ar ar-modes="webxr scene-viewer quick-look" animation-name="StandUP" camera-controls touch-action="pan-y" shadow-intensity="2" poster = {model?.poster} autoplay>
-            <div id="content">
-                <div className="name">
-                    {model?.name}
+        <>
+            <div className="model-viewer-container">
+                <model-viewer id = "viewer" src={model?.linkGLB} ar ar-modes="webxr scene-viewer quick-look" animation-name="StandUP" camera-controls touch-action="pan-y" shadow-intensity="2" shadow-softness="0" autoplay>
+                <div id="content">
+                    <div className="name">
+                        {model?.name}
+                    </div>
+                    <div className="description">
+                        {model?.description}
+                    </div>
                 </div>
-                <div className="description">
-                    {model?.description}
-                </div>
+                </model-viewer>
             </div>
             <div className="toggle-poster" onClick={()=>{
-                if(document.getElementById("viewer").modelIsVisible===true){
-                    console.log("is visible")
-                    document.getElementById("viewer").showPoster()
-                    document.getElementById("content").style.display = "none"
-                }else{
-                    console.log("no visible")
-                    document.getElementById("viewer").dismissPoster()
-                    document.getElementById("content").style.display = "block"
-                }
+                    if(document.getElementById("viewer").modelIsVisible===true){
+                        document.getElementById("viewer").poster = model?.poster
+                        document.getElementById("viewer").showPoster()
+                        document.getElementById("viewer").style.width = "60vw"
+                        document.getElementById("content").style.display = "none"
+                        
+                    }else{
+                        document.getElementById("viewer").dismissPoster()
+                        document.getElementById("viewer").style.width = "80vw"
+                        document.getElementById("content").style.display = "block"
+                    }
             }}><CompareRoundedIcon color={"action"}/></div>
-            </model-viewer>
-        </div>
+        </>
     );
 }
 
