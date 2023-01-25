@@ -12,9 +12,10 @@
 
   .title{
     margin-bottom: 10%;
+    /* font-size: calc(); */
   }
 
-  @media (max-width:1000px){
+  /* @media (max-width:1000px){
     .panel{
       position: static;
       width: 90vw;
@@ -27,4 +28,4 @@
     .btn{
       min-width: 60vw;
     }
-  }
+  } */

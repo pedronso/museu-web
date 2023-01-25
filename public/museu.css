@@ -54,7 +54,16 @@ p font-family helvetica {
   top:240px;
   z-index: 2;
   position: relative;
+  max-width: 50vw;
 }
+
+.video-section-container-home{
+  top:240px;
+  z-index: 2;
+  position: relative;
+  max-width: 80vw;
+}
+
 
 .video-section-container-home {
   top:240px;

@@ -36,7 +36,8 @@
     to   { opacity: 1; }
 }
 .description{
-    font-size: medium;
+    font-size: calc(2.7px + 2vmin);
+    /* font-size: medium; */
     text-align: start;
     
     -webkit-animation: fadein 3s;
@@ -45,7 +46,7 @@ model-viewer{
     width: 80vw;
     height: 100vh;
 }
-
+/* 
 @media (max-width:1000px){
     #content{
         top: 0px;
@@ -53,14 +54,14 @@ model-viewer{
     }
     .toggle-poster{
         position: absolute;
-        /* top:0%; */
+        
         left: 1%;
-        /* right: 0%; */
+        
         bottom: -35%;
     }
     model-viewer{
         width: 100vw;
         height: 80vh;
     }
-  }
+  } */
   
