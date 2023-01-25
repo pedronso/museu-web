@@ -13,7 +13,7 @@
   .title{
     margin-bottom: 10%;
   }
-
+/* 
   @media (max-width:1000px){
     .panel{
       position: static;
@@ -27,4 +27,4 @@
     .btn{
       min-width: 60vw;
     }
-  }
+  } */

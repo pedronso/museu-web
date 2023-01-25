@@ -52,9 +52,15 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App-body">
-         <Panel handleModelSelection={handleModelSelection}/>
-        <ModelViewer model={model} />
+      <div id="screen">
+        <div className="App-body">
+          <Panel handleModelSelection={handleModelSelection}/>
+            <ModelViewer model={model}/>
+        </div>
+      </div>
+      <div id="turn">
+        <h1>Por favor, gire seu aparelho</h1>
+        <img src="./rotate_black.gif" alt=""/>
       </div>
     </div>
   );
