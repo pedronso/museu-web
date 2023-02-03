@@ -1,18 +1,22 @@
 var addZoom = (target) => {
-    // (A) GET CONTAINER + IMAGE SOURCE
+    //get container and img src
     let container = document.getElementsByClassName("zoomC")[target],
         imgsrc = container.currentStyle || window.getComputedStyle(container, false);
         imgsrc = imgsrc.backgroundImage.slice(4, -1).replace(/"/g, "");
-   
-    // (B) LOAD IMAGE + ATTACH ZOOM
+        
+        Object.assign(container.style, {
+          backgroundPosition: "center",
+          backgroundSize: "cover"
+        });   
+    //load image and set zoom
     let img = new Image();
     img.src = imgsrc;
     img.onload = () => {
-      // (B1) CALCULATE ZOOM RATIO
+      //calculate zoom ratio
       let ratio = img.naturalHeight / img.naturalWidth,
           percentage = ratio * 100 + "%";
    
-      // (B2) ATTACH ZOOM ON MOUSE MOVE
+      //set zoom on mouse move
       container.onmousemove = (e) => {
         let rect = e.target.getBoundingClientRect(),
             xPos = e.clientX - rect.left,
@@ -26,7 +30,7 @@ var addZoom = (target) => {
         });
       };
    
-      // (B3) RESET ZOOM ON MOUSE LEAVE
+      //reset zoom on mouse leave
       container.onmouseleave = (e) => {
         Object.assign(container.style, {
           backgroundPosition: "center",
@@ -36,7 +40,7 @@ var addZoom = (target) => {
     }
   };
    
-  // (C) ATTACH FOLLOW ZOOM
+  //attach follow zoom
   window.onload = () => { 
     for (let index = 0; index < document.getElementsByClassName("zoomC").length; index++) {
         addZoom(index);

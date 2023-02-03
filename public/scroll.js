@@ -3,7 +3,6 @@ var vid = document.getElementById('player');
 var time = $('#time');
 var scroll = $('#scroll');
 var windowheight = $(window).height();
-// select video element         
 var dotControll = 0;
 // lower numbers = faster playback
 var playbackConst = 300;
