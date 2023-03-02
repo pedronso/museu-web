@@ -14,6 +14,12 @@ export const jsonMock = {
         "description": "O modelo 1873 era conhecido popularmente como Rifle “Papo Amarelo” devido a uma peça de latão exposta na parte inferior da caixa da culatra (parte posterior do mecanismo de uma Arma de Fogo, onde se aloja o mecanismo de disparo, localizada junto à coronha). Foi vastamente usado no momento inicial do cangaço, perdurando até 1926.",
         "poster": "./models/modelo15.png",
         "linkGLB": "./models/modelo15.glb"
+    },
+    {
+        "name": "Pistola de dois gatilhos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "poster": "./models/modelo20.png",
+        "linkGLB": "./models/modelo20.glb"
     }
     ],
     Personagens:[{
@@ -60,6 +66,12 @@ export const jsonMock = {
         "description": "Lampião, desde jovem, apresentava problemas de visão. Percebe-se em várias fotografias que seu olho esquerdo tem o globo embranquecido e a pálpebra mais baixa. Entretanto, em 1925 ele teve seu olho esquerdo arranhado por um garrancho de jurema. Após alguns tratamentos, com leves melhoras, Lampião passa a usar óculos escuros, por que a luminosidade do sol provocava incômodos.  Porém, ele só se deixou fotografar com óculos claro, com aros de ouro, por questão de vaidade.",
         "poster": "./models/modelo16.png",
         "linkGLB": "./models/modelo16.glb"
+    },
+    {
+        "name": "Garrafa de vinho",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "poster": "./models/modelo19.png",
+        "linkGLB": "./models/modelo19.glb"
     }
   ],
     Roupas:[{
