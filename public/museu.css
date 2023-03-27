@@ -1,4 +1,3 @@
-
 #music-player {
   opacity: 0.2;
   position: fixed;
@@ -297,13 +296,13 @@ p font-family helvetica {
   font-size: 16px;
 }
 
-/* (A) WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+/*wrong orientation - show message, hide content */
 @media only screen and (orientation:portrait) {
   #turn { display:flex; }
   #museu-container { display:none; }
 }
  
-/* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+/* correct orientation - show content, hide message */
 @media only screen and (orientation:landscape) {
   #turn { display:none; }
   #museu-container { display:flex; }
