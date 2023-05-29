@@ -1,12 +1,12 @@
 import audios from "./musics_data.js";
-import { path, secondsToMinutes } from "./utils.js";
+import { path, secondsToMinutes, shuffle } from "./utils.js";
 import elements from "./playerElements.js";
 
 export default {
-  audioData: audios,
+  audioData: shuffle(audios),
   currentAudio: {},
   currentPlaying: 0,
-  isPlaying: false,
+  isPlaying: true,
   start() {
     elements.get.call(this);
     this.update();
@@ -69,7 +69,8 @@ export default {
     this.currentAudio = this.audioData[this.currentPlaying];
 
     this.title.innerHTML = this.currentAudio.title;
-    this.artist.innerHTML = this.currentAudio.artist;
+    // this.artist.innerHTML = this.currentAudio.artist;
+    this.artist.innerHTML = "";
 
     elements.createAudioElement.call(this, path(this.currentAudio.file));
 

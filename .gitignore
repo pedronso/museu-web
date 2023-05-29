@@ -19,6 +19,7 @@
 .env.production.local
 
 /public/museu_full.m4v
+/public/musics
 
 npm-debug.log*
 yarn-debug.log*
