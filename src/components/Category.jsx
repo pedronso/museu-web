@@ -11,7 +11,7 @@ function Category({category, cat_index, handleModelSelection, }){
 
     return(
      <>
-        <button className="btn first" onClick={handleSetShow} style={{backgroundColor: show ? "#e74c3c":"transparent", color: show ? "white":"black"}}>{category.name}</button>
+        <button className="btn first" onClick={handleSetShow} style={{backgroundColor: show ? "#b22222":"transparent", color: show ? "white":"black"}}>{category.name}</button>
             {category.modelos.map((artifact,index) =>{
                 return(
                     <>
